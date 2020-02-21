@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WXApi.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import <BMKLocationkit/BMKLocationComponent.h>
+#import <BMKLocationkit/BMKLocationAuth.h>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,WXApiDelegate, BMKLocationAuthDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) NSString *AllOrderId;
 
 @end
 
